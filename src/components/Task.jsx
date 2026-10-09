@@ -1,9 +1,10 @@
 const Task = (props) => {
        return (
         <div className="card">
-            <p>{props.title}</p>
+            <h2>{props.title}</h2>
             <p>Due: {props.deadline}</p>
             <p>{props.children}</p>
+            <p>{props.description}</p>
         </div>
     )
 }
