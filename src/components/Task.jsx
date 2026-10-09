@@ -3,8 +3,8 @@ const Task = (props) => {
         <div className="card">
             <h2>{props.title}</h2>
             <p>Due: {props.deadline}</p>
-            <p>{props.children}</p>
             <p>{props.description}</p>
+            <p><b>{props.priority_lvl}</b></p>
         </div>
     )
 }
