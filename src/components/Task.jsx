@@ -1,11 +1,13 @@
 const Task = (props) => {
-       return (
+    
+    return (
         <div className="card">
-            <h2>{props.title}</h2>
+            <p className="title">{props.title}</p>
             <p>Due: {props.deadline}</p>
-            <p>{props.description}</p>
-            <p><b>{props.priority_lvl}</b></p>
+            <p className="description">{props.description}</p>
+            <p className="priority">{props.priority}</p>
         </div>
     )
 }
-export default Task;
+
+export default Task
